@@ -1,0 +1,147 @@
+.pantalla {
+    display: none;
+  }
+  .visible {
+    display: block;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#9b4922;
+    color: #efe7dd;
+}
+
+
+.highline {
+    color: rgb(207, 195, 23);
+}
+
+
+header {
+    background-color: #bd9791;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    color: white;
+    border-bottom: 2px solid #fff;
+}
+
+.social-icons a { 
+    color: #fff;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+#hero {
+    text-align: center;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin: 0.5rem 0;
+}
+
+
+#hero p {
+    max-width: 600px;
+    margin: 1rem auto;
+    color: #aaa;
+}
+
+.cta-button {
+    background-color: #373d3b;
+    color: #efe7dd;
+    border: none;
+    padding: 0.72rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+
+.galery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.galery-grid img {
+    width: 100%; 
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+footer{
+    /*background-color: #aaa;*/
+    text-align: center;
+}
+
+#sketch-holder {
+    width: 100%;
+    max-width: 1024px; 
+    height: 400px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+#sketch-holder canvas {
+    display: block;
+    margin: 0 auto;
+}
+
+#pisarra {
+    width: 100%;
+    max-width: 1024px; 
+    height: 400px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+#pisarra canvas {
+    display: block;
+    margin: 0 auto;
+}
+@media (max-width: 768px) {
+    #pisarra {
+        height: 200px;
+    }
+    #sketch-holder {
+        height: 200px;
+    }
+}
+
+

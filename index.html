@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natalia Avila</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-code"></i>curso UTN2024
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio" class="active">Inicio</a></li>
+                <li><a href="#sobremi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href=""><i class="fa fa-github"></i></a>
+            <a href=""><i class="fa fa-linkedin-in"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a> 
+        </div>
+    </header>
+
+    <main>
+
+        <section id="hero">
+            <div id="pantalla1" class="pantalla visible">
+                <h1>Bienvenido al portafolio de</h1>
+                <h1>Natalia Avila</h1>
+                <p>Aquí vas a encontrar unas muestras del 2024</p>
+                <button class="cta-button" onclick="cambiarPantalla(2)">Ver Mas</button>
+            </div> 
+        </section>     
+            
+    
+
+        <div id="pantalla2" class="pantalla">
+            <section id="proyectos">
+                <div class="galery-grid">
+                    <div class="project-card"> 
+                        <img src="assets/img/pizarra.jpg" alt="Proyecto 1">
+                        <h3>Proyecto 1</h3>
+                        <p>Pizarra</p>
+                        <button class="cta-button" onclick="cambiarPantalla(3)">Ver proyecto</button>
+                        
+                    </div>
+                    <div class="project-card">
+                        <img src="assets/img/istockphoto-1289303735-1024x1024.jpg" alt="Proyecto 2">
+                        <h3>Proyecto 2</h3>
+                        <p>Breve descripción del proyecto</p>
+                    </div>
+                    <div class="project-card">
+                        <img src="assets/img/istockphoto-1289303735-1024x1024.jpg" alt="Proyecto 3">
+                        <h3>Proyecto 3</h3>
+                        <p>Breve descripción del proyecto</p>
+                    </div>
+                    <div class="project-card">
+                        <img src="assets/img/istockphoto-1289303735-1024x1024.jpg" alt="Proyecto 4">
+                        <h3>Proyecto 4</h3>
+                        <p>Breve descripción del proyecto</p>
+                    </div>
+                </div>
+            </section>
+            <section class="sobremi">
+                <div id="sobremi">
+                    <h3>Sobre mi</h3>
+                    <p><span class="highline">¡Hola! Soy Natalia Avila,</span>  desarrolladora web junior apasionada por la tecnología y la creación de soluciones innovadoras. Recientemente me gradué en programación, y desde entonces me he dedicado a mejorar mis habilidades en el desarrollo de software, con especial interés en el front-end y la experiencia de usuario.</p>
+                </div>
+            </section>
+            <section class="habilidades">
+                <div id="habilidades">
+                    <h3>Habilidades</h3>
+                    <p>Mejorando mis habilidades en desarrollo de software, con interés en el front-end y la experiencia de usuario.</p>
+               </div>
+            </section>
+            <section>
+                <h3 id="contacto">Contacto</h3>
+                <p><a href="mailto: NataliAvila@gmail.com">Nataliavila@gmail.com</a></p>
+                <p><a href="https://www.google.com/maps/place/AJR,+Avellaneda+2586,+B1610+Ricardo+Rojas,+Provincia+de+Buenos+Aires" target="_blank"> Avellaneda 2586, Ricardo Rojas</a></p>
+            </section>
+        </div>
+        
+        <div id="pantalla3" class="pantalla">
+            <div id="pisarra"></div>
+            <button  class="cta-button"onclick="clearCanvas()">Borrar</button>
+            <button class="cta-button" onclick="cambiarPantalla(2)">Volver</button>
+
+        </div>
+        
+    </main>
+   
+    <footer>
+        <p class="cop">Copyright © 2024 Natalia Avila</p>
+        <script src="assets/sketch.js"></script>
+       
+    </footer>
+</body>
+</html>
+
